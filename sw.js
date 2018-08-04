@@ -13,7 +13,7 @@ self.addEventListener('install', function(e) {
                 './js/knockout-3.4.2.js',
                 './js/index.js',
                 './css/fonts/roboto.woff',
-                './offline.html'
+                './index.php'
             ]).then(function() {
                 self.skipWaiting();
             });
