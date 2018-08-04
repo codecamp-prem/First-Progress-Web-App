@@ -11,7 +11,7 @@ var Page = function() {
             showOfflineWarning: function() {
                 document.querySelector(".arrivals-list").classList.add("loading");
                 var request = new XMLHttpRequest;
-                request.open("GET", "./offline.html", !0), request.onload = function() {
+                request.open("GET", "./index.php", !0), request.onload = function() {
                     if (200 === request.status) {
                         var offlineMessageElement = document.createElement("div");
                         offlineMessageElement.setAttribute("id", "offline"), offlineMessageElement.innerHTML = request.responseText, document.getElementById("main").appendChild(offlineMessageElement)
